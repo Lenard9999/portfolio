@@ -8,7 +8,7 @@ import travelAgencyProject from "../assets/travelAgencyProject.png"
 const projects = [
   {
     id: "proj-1",
-    title: "Field Service Management SuiteApp",
+    title: "Oracle's Field Service Management SuiteApp",
     description:
       "Developed and maintained modular bundles for Oracle NetSuite's Field Service Management SuiteApp, including mobile support and agent scheduling. Improved stability, feature releases, and automation testing across assets, tasks, expenses, projects, and cases.",
     tech: ["SuiteScript", "JavaScript", "NetSuite", "Groovy", "SonarQube"],
