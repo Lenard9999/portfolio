@@ -9,13 +9,13 @@ const Projects = () => (
         fontSize={["2xl", "3xl"]}
         fontWeight="700"
         letterSpacing="-0.02em"
-        color="gray.900"
+        color="white"
         mb={3}
       >
-        Featured Projects
+        The Holocron
       </Heading>
-      <Text color="gray.500" fontSize="md">
-        A selection of work I've built across different industries and stacks.
+      <Text color="gray.400" fontSize="md">
+        A collection of missions I've completed across different sectors of the galaxy.
       </Text>
     </Box>
     <SimpleGrid columns={[1, 2, 3]} spacing={6}>

@@ -34,8 +34,8 @@ const Contact = () => {
       window.location.href = mailto;
       actions.setSubmitting(false);
       toast({
-        title: "Ready to send",
-        description: "Your email client should open.",
+        title: "Transmission incoming!",
+        description: "Your email client should open. May the Force be with you.",
         status: "success",
         duration: 4000,
         isClosable: true,
@@ -50,29 +50,29 @@ const Contact = () => {
           fontSize={["2xl", "3xl"]}
           fontWeight="700"
           letterSpacing="-0.02em"
-          color="gray.900"
+          color="white"
           mb={3}
         >
-          Get in Touch
+          Open a Channel
         </Heading>
-        <Text color="gray.500" fontSize="md">
-          Have a project in mind or just want to say hi? I'd love to hear from you.
+        <Text color="gray.400" fontSize="md">
+          Have a mission briefing or just want to say hi? The Force brought you here—I'd love to hear from you.
         </Text>
       </Box>
       <Grid templateColumns={["1fr", "1fr", "1fr 2fr"]} gap={12}>
         <GridItem>
           <Stack spacing={6}>
             <Box>
-              <Text fontWeight="600" color="gray.700" mb={1} fontSize="sm">
+              <Text fontWeight="600" color="gray.300" mb={1} fontSize="sm">
                 Email
               </Text>
-              <Text color="gray.500" fontSize="sm">
+              <Text color="gray.400" fontSize="sm">
                 lenardbto@gmail.com
               </Text>
             </Box>
             <Box>
-              <Text fontWeight="600" color="gray.700" mb={3} fontSize="sm">
-                Find me elsewhere
+              <Text fontWeight="600" color="gray.300" mb={3} fontSize="sm">
+                Other Outposts
               </Text>
               <VStack align="start" spacing={2}>
                 <Button
@@ -83,9 +83,9 @@ const Contact = () => {
                   size="sm"
                   variant="outline"
                   borderRadius="lg"
-                  borderColor="gray.300"
-                  color="gray.700"
-                  _hover={{ bg: "gray.50" }}
+                  borderColor="rgba(255, 232, 31, 0.3)"
+                  color="gray.300"
+                  _hover={{ bg: "rgba(255, 232, 31, 0.1)", borderColor: "#FFE81F" }}
                 >
                   GitHub
                 </Button>
@@ -97,9 +97,9 @@ const Contact = () => {
                   size="sm"
                   variant="outline"
                   borderRadius="lg"
-                  borderColor="gray.300"
-                  color="gray.700"
-                  _hover={{ bg: "blue.50", borderColor: "blue.200" }}
+                  borderColor="rgba(255, 232, 31, 0.3)"
+                  color="gray.300"
+                  _hover={{ bg: "rgba(255, 232, 31, 0.1)", borderColor: "#FFE81F" }}
                 >
                   LinkedIn
                 </Button>
@@ -109,16 +109,16 @@ const Contact = () => {
         </GridItem>
         <GridItem>
           <Box
-            bg="white"
+            bg="rgba(14, 14, 30, 0.9)"
             borderWidth="1px"
-            borderColor="gray.200"
+            borderColor="rgba(255, 232, 31, 0.15)"
             borderRadius="2xl"
             p={8}
           >
             <form onSubmit={formik.handleSubmit}>
               <VStack spacing={5} align="stretch">
                 <FormControl isInvalid={formik.touched.name && formik.errors.name}>
-                  <FormLabel fontSize="sm" fontWeight="600" color="gray.700">
+                  <FormLabel fontSize="sm" fontWeight="600" color="gray.300">
                     Name
                   </FormLabel>
                   <Input
@@ -127,14 +127,18 @@ const Contact = () => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     borderRadius="xl"
-                    borderColor="gray.200"
-                    _focus={{ borderColor: "teal.400", boxShadow: "0 0 0 3px rgba(20, 184, 166, 0.15)" }}
+                    borderColor="rgba(255, 232, 31, 0.2)"
+                    bg="rgba(9, 9, 20, 0.6)"
+                    color="gray.100"
+                    _placeholder={{ color: "gray.600" }}
+                    _focus={{ borderColor: "#FFE81F", boxShadow: "0 0 0 3px rgba(255, 232, 31, 0.15)" }}
+                    _hover={{ borderColor: "rgba(255, 232, 31, 0.4)" }}
                   />
                   <FormErrorMessage>{formik.errors.name}</FormErrorMessage>
                 </FormControl>
 
                 <FormControl isInvalid={formik.touched.email && formik.errors.email}>
-                  <FormLabel fontSize="sm" fontWeight="600" color="gray.700">
+                  <FormLabel fontSize="sm" fontWeight="600" color="gray.300">
                     Email
                   </FormLabel>
                   <Input
@@ -144,14 +148,18 @@ const Contact = () => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     borderRadius="xl"
-                    borderColor="gray.200"
-                    _focus={{ borderColor: "teal.400", boxShadow: "0 0 0 3px rgba(20, 184, 166, 0.15)" }}
+                    borderColor="rgba(255, 232, 31, 0.2)"
+                    bg="rgba(9, 9, 20, 0.6)"
+                    color="gray.100"
+                    _placeholder={{ color: "gray.600" }}
+                    _focus={{ borderColor: "#FFE81F", boxShadow: "0 0 0 3px rgba(255, 232, 31, 0.15)" }}
+                    _hover={{ borderColor: "rgba(255, 232, 31, 0.4)" }}
                   />
                   <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
                 </FormControl>
 
                 <FormControl isInvalid={formik.touched.message && formik.errors.message}>
-                  <FormLabel fontSize="sm" fontWeight="600" color="gray.700">
+                  <FormLabel fontSize="sm" fontWeight="600" color="gray.300">
                     Message
                   </FormLabel>
                   <Textarea
@@ -161,8 +169,12 @@ const Contact = () => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     borderRadius="xl"
-                    borderColor="gray.200"
-                    _focus={{ borderColor: "teal.400", boxShadow: "0 0 0 3px rgba(20, 184, 166, 0.15)" }}
+                    borderColor="rgba(255, 232, 31, 0.2)"
+                    bg="rgba(9, 9, 20, 0.6)"
+                    color="gray.100"
+                    _placeholder={{ color: "gray.600" }}
+                    _focus={{ borderColor: "#FFE81F", boxShadow: "0 0 0 3px rgba(255, 232, 31, 0.15)" }}
+                    _hover={{ borderColor: "rgba(255, 232, 31, 0.4)" }}
                     resize="none"
                   />
                   <FormErrorMessage>{formik.errors.message}</FormErrorMessage>
@@ -170,12 +182,15 @@ const Contact = () => {
 
                 <Button
                   type="submit"
-                  colorScheme="teal"
                   isLoading={formik.isSubmitting}
                   borderRadius="xl"
                   fontWeight="600"
+                  bg="#FFE81F"
+                  color="#090914"
+                  _hover={{ bg: "#FFD700", transform: "translateY(-1px)" }}
+                  transition="all 0.2s"
                 >
-                  Send Message
+                  Send Transmission
                 </Button>
               </VStack>
             </form>

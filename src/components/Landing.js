@@ -13,7 +13,6 @@ const Landing = () => (
   <Box id="landing" py={20}>
     <Stack spacing={6} maxW="2xl">
       <Badge
-        colorScheme="teal"
         px={3}
         py={1}
         borderRadius="full"
@@ -21,8 +20,11 @@ const Landing = () => (
         textTransform="none"
         fontWeight="600"
         w="fit-content"
+        bg="rgba(255, 232, 31, 0.12)"
+        color="#FFE81F"
+        border="1px solid rgba(255, 232, 31, 0.3)"
       >
-        Software Engineer
+        Jedi Full-Stack Engineer
       </Badge>
       <Heading
         as="h1"
@@ -30,30 +32,35 @@ const Landing = () => (
         fontWeight="800"
         letterSpacing="-0.03em"
         lineHeight="1.1"
-        color="gray.900"
+        color="white"
       >
         Hi, I'm Lenard
       </Heading>
-      <Text fontSize={["md", "lg"]} color="gray.600" lineHeight="1.8">
-        I build scalable web apps and automation systems with React and AWS. I
-        love turning complex problems into clean, practical solutions—especially
-        when it helps make someone's life easier.
+      <Text fontSize={["md", "lg"]} color="gray.300" lineHeight="1.8">
+        I use the Force of React and AWS to build scalable web apps and
+        automation systems. My midi-chlorian count may be classified, but my
+        ability to turn complex problems into clean, practical solutions? Very
+        much real—and strong with this one.
       </Text>
-      <Text fontSize={["md", "lg"]} color="gray.600" lineHeight="1.8">
-        Outside of work, I'm always tinkering with new technologies, traveling,
-        exploring new ideas, and feeding my never-ending curiosity.
+      <Text fontSize={["md", "lg"]} color="gray.300" lineHeight="1.8">
+        When I'm not wielding my keyboard like a lightsaber, I'm tinkering with
+        new tech, exploring new galaxies (and restaurants), and feeding my
+        never-ending curiosity. Do or do not—there is no try.
       </Text>
       <HStack spacing={3} pt={2} wrap="wrap">
         <Button
           as="a"
           href="#projects"
-          colorScheme="teal"
           size="lg"
           px={8}
           borderRadius="xl"
           fontWeight="600"
+          bg="#FFE81F"
+          color="#090914"
+          _hover={{ bg: "#FFD700", transform: "translateY(-1px)" }}
+          transition="all 0.2s"
         >
-          See my work
+          View my Holocron
         </Button>
         <Button
           as="a"
@@ -63,11 +70,11 @@ const Landing = () => (
           px={8}
           borderRadius="xl"
           fontWeight="600"
-          borderColor="gray.300"
-          color="gray.700"
-          _hover={{ bg: "gray.100" }}
+          borderColor="rgba(255, 232, 31, 0.4)"
+          color="gray.200"
+          _hover={{ bg: "rgba(255, 232, 31, 0.1)", borderColor: "#FFE81F" }}
         >
-          Get in touch
+          Send a Transmission
         </Button>
       </HStack>
     </Stack>

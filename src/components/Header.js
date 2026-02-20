@@ -8,15 +8,15 @@ const Header = () => (
     position="fixed"
     top={0}
     width="100%"
-    bg="rgba(248, 250, 252, 0.85)"
+    bg="rgba(9, 9, 20, 0.85)"
     backdropFilter="saturate(180%) blur(12px)"
     zIndex={1000}
     borderBottom="1px solid"
-    borderColor="gray.200"
+    borderColor="rgba(255, 232, 31, 0.2)"
   >
     <Flex align="center" maxW="container.lg" mx="auto" px={6} py={4}>
       <Link href="#landing" _hover={{ textDecoration: "none" }}>
-        <Text fontWeight="700" fontSize="lg" color="gray.900" letterSpacing="-0.02em">
+        <Text fontWeight="700" fontSize="lg" color="#FFE81F" letterSpacing="-0.02em">
           Lenard To
         </Text>
       </Link>
@@ -26,8 +26,8 @@ const Header = () => (
           href="#landing"
           fontSize="sm"
           fontWeight="500"
-          color="gray.600"
-          _hover={{ color: "teal.600", textDecoration: "none" }}
+          color="gray.400"
+          _hover={{ color: "#FFE81F", textDecoration: "none" }}
           transition="color 0.2s"
         >
           Home
@@ -36,8 +36,8 @@ const Header = () => (
           href="#projects"
           fontSize="sm"
           fontWeight="500"
-          color="gray.600"
-          _hover={{ color: "teal.600", textDecoration: "none" }}
+          color="gray.400"
+          _hover={{ color: "#FFE81F", textDecoration: "none" }}
           transition="color 0.2s"
         >
           Projects
@@ -46,8 +46,8 @@ const Header = () => (
           href="#contact"
           fontSize="sm"
           fontWeight="500"
-          color="gray.600"
-          _hover={{ color: "teal.600", textDecoration: "none" }}
+          color="gray.400"
+          _hover={{ color: "#FFE81F", textDecoration: "none" }}
           transition="color 0.2s"
         >
           Contact
@@ -62,8 +62,8 @@ const Header = () => (
           icon={<FaGithub size={18} />}
           variant="ghost"
           size="sm"
-          color="gray.600"
-          _hover={{ color: "gray.900", bg: "gray.100" }}
+          color="gray.400"
+          _hover={{ color: "#FFE81F", bg: "rgba(255, 232, 31, 0.1)" }}
         />
         <IconButton
           as="a"
@@ -73,8 +73,8 @@ const Header = () => (
           icon={<FaLinkedin size={18} />}
           variant="ghost"
           size="sm"
-          color="gray.600"
-          _hover={{ color: "blue.700", bg: "blue.50" }}
+          color="gray.400"
+          _hover={{ color: "#FFE81F", bg: "rgba(255, 232, 31, 0.1)" }}
         />
       </HStack>
     </Flex>

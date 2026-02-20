@@ -11,13 +11,17 @@ const ProjectCard = ({
   liveLink,
 }) => (
   <Box
-    bg="white"
+    bg="rgba(14, 14, 30, 0.9)"
     borderWidth="1px"
-    borderColor="gray.200"
+    borderColor="rgba(255, 232, 31, 0.15)"
     borderRadius="2xl"
     overflow="hidden"
-    transition="all 0.2s ease"
-    _hover={{ shadow: "lg", transform: "translateY(-2px)", borderColor: "gray.300" }}
+    transition="all 0.25s ease"
+    _hover={{
+      boxShadow: "0 0 24px rgba(255, 232, 31, 0.15), 0 8px 32px rgba(0,0,0,0.4)",
+      transform: "translateY(-3px)",
+      borderColor: "rgba(255, 232, 31, 0.4)",
+    }}
     display="flex"
     flexDirection="column"
   >
@@ -36,23 +40,24 @@ const ProjectCard = ({
     )}
     <Box p={5} flex="1" display="flex" flexDirection="column">
       <Stack spacing={3} flex="1">
-        <Heading size="sm" fontWeight="700" color="gray.900" letterSpacing="-0.01em">
+        <Heading size="sm" fontWeight="700" color="gray.100" letterSpacing="-0.01em">
           {title}
         </Heading>
-        <Text fontSize="sm" color="gray.500" noOfLines={3} lineHeight="1.7">
+        <Text fontSize="sm" color="gray.400" noOfLines={3} lineHeight="1.7">
           {description}
         </Text>
         <HStack wrap="wrap" spacing={1} gap={1}>
           {tech.map((t) => (
             <Badge
               key={t}
-              colorScheme="teal"
-              variant="subtle"
               fontSize="xs"
               px={2}
               py={0.5}
               borderRadius="md"
               fontWeight="500"
+              bg="rgba(255, 232, 31, 0.1)"
+              color="#FFE81F"
+              border="1px solid rgba(255, 232, 31, 0.2)"
             >
               {t}
             </Badge>
@@ -67,10 +72,12 @@ const ProjectCard = ({
               href={liveLink}
               target="_blank"
               size="sm"
-              colorScheme="teal"
               rightIcon={<ExternalLinkIcon />}
               borderRadius="lg"
               fontWeight="600"
+              bg="#FFE81F"
+              color="#090914"
+              _hover={{ bg: "#FFD700" }}
             >
               Live
             </Button>
@@ -85,9 +92,9 @@ const ProjectCard = ({
               borderRadius="lg"
               fontWeight="600"
               leftIcon={<FaGithub />}
-              borderColor="gray.300"
-              color="gray.700"
-              _hover={{ bg: "gray.50" }}
+              borderColor="rgba(255, 232, 31, 0.3)"
+              color="gray.300"
+              _hover={{ bg: "rgba(255, 232, 31, 0.1)", borderColor: "#FFE81F" }}
             >
               Code
             </Button>
