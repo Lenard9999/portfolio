@@ -4,6 +4,8 @@ import genAIproject from "../assets/genAIproject.png"
 import instamoProject from "../assets/instamoProject.png"
 import fsmProject from "../assets/fsmProject.png"
 import travelAgencyProject from "../assets/travelAgencyProject.png"
+import stairpayAnalyticsProject from "../assets/stairpayAnalyticsProject.png"
+import gpSalesProject from "../assets/gpSalesProject.png"
 
 const projects = [
   {
@@ -22,7 +24,7 @@ const projects = [
     description:
       "Built the core analytics product for Stairpay’s staircase mortgage scheme, enabling customer financial insights and reporting. Implemented frontend with Next.js and TailwindCSS, integrated Supabase backend, and deployed via AWS.",
     tech: ["Next js", "React", "Supabase", "TailwindCSS", "AWS"],
-    image: "",
+    image: stairpayAnalyticsProject,
     repoLink: "",
     liveLink: "",
   },
@@ -91,6 +93,16 @@ const projects = [
       "API Routes",
     ],
     image: travelAgencyProject,
+    repoLink: "",
+    liveLink: "",
+  },
+  {
+    id: "proj-8",
+    title: "GP Sales Management System",
+    description:
+      "Built a full-stack sales and purchase order management system for tracking revenue between clients and suppliers. Features a real-time analytics dashboard, multi-currency support with conversion rates, PDF export for statements and purchase orders, and payment status tracking across Paid and Pending transactions.",
+    tech: ["Next.js", "TypeScript", "React", "Supabase", "TailwindCSS", "React Query", "shadcn/ui"],
+    image: gpSalesProject,
     repoLink: "",
     liveLink: "",
   },
