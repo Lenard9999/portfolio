@@ -10,7 +10,7 @@ function App() {
   return (
     <Box bg="#F8FAFC" minH="100vh">
       <Header />
-      <Container maxW="container.lg" pt="80px" pb={12}>
+      <Container maxW="container.xl" pt="80px" pb={12}>
         <Landing />
         <Projects />
         <Contact />

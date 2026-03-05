@@ -14,7 +14,7 @@ const Header = () => (
     borderBottom="1px solid"
     borderColor="gray.200"
   >
-    <Flex align="center" maxW="container.lg" mx="auto" px={6} py={4}>
+    <Flex align="center" maxW="container.xl" mx="auto" px={6} py={4}>
       <Link href="#landing" _hover={{ textDecoration: "none" }}>
         <Text fontWeight="700" fontSize="lg" color="gray.900" letterSpacing="-0.02em">
           Lenard To

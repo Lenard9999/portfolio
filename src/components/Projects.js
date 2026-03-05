@@ -18,7 +18,7 @@ const Projects = () => (
         A selection of work I've built across different industries and stacks.
       </Text>
     </Box>
-    <SimpleGrid columns={[1, 2, 3]} spacing={6}>
+    <SimpleGrid columns={[1, 2, 3, 4]} spacing={6}>
       {projects.map((p) => (
         <ProjectCard key={p.id} {...p} />
       ))}
